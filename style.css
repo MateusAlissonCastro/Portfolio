@@ -7,9 +7,38 @@
 /*Identificadores e propriedades CSS*/
 
 /*Identificar universal*/
+:root{
+  --font-primary: "Baloo Da 2", serif;
+  --font-secundary: "Josefin Slab", serif;
+  --font-action: "Muli", serif;
+}
+
 *{
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*Botão abrir e fechar o menu lateral*/
+.hamburguer{
+  height: 2rem;
+  width: 2rem;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  cursor: pointer;
+  
+}
+.line{
+  background: #fff;
+  height: .1rem;
+  width: 100%;
+  box-shadow: .1rem .1rem 1px #000;
 }
 
 /*Imagem de fundo*/
@@ -97,4 +126,57 @@ header{
     transform: translateY(0) rotateY(0);
     opacity:1;
   }
+}
+
+/*Barra lateral de menu de navegação*/
+.siderbar{
+  height: 100vh;
+  width: 20rem;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+.menu{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.menu-item{
+  text-align: center; 
+  margin-bottom: .5rem;
+}
+.menu-link{
+  font-style: var(--font-action);
+  font-size: 2rem;
+  color: #555;
+  transition: color 1s;
+}
+.menu-link:hover{
+  color: #DA22FF;
+}
+
+/*Mídias sociais*/
+.social-media{
+  height: 2rem;
+  width: 100%;
+  position: absolute;
+  bottom: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.social-media i{
+  height: 2.5rem;
+  width: 2.5rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: color 1s;
+}
+.social-media i:hover{
+  color: #DA22FF;
 }
