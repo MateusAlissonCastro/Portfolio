@@ -32,13 +32,29 @@
   flex-direction: column;
   justify-content: space-evenly;
   cursor: pointer;
-  /*opa*/
+  transition: right 1s;
+  
+}
+.show-menu .hamburguer{
+  right: 16rem;
 }
 .line{
-  background: #fff;
+  background: #DA22FF;
   height: .1rem;
   width: 100%;
-  box-shadow: .1rem .1rem 1px #000;
+  /*box-shadow: .1rem .1rem 1px #000;*/
+  transition: transform 1s;
+}
+
+.show-menu #line1{
+  transform: rotate(45deg);
+  position: absolute;
+}
+.show-menu #line2{
+  display: none;
+}
+.show-menu #line3{
+  transform: rotate(-45deg);
 }
 
 /*Imagem de fundo*/
@@ -128,6 +144,11 @@ header{
   }
 }
 
+/*Classe para ativar o menu lateral*/
+.show-menu .siderbar{
+  right: 0;
+}
+
 /*Barra lateral de menu de navegação*/
 .siderbar{
   height: 100vh;
@@ -135,7 +156,8 @@ header{
   background-color: #fff;
   position: fixed;
   top: 0;
-  right: 0;
+  right: -20rem;
+  transition: all 1s;
 }
 .menu{
   position: absolute;
@@ -180,5 +202,3 @@ header{
 .social-media i:hover{
   color: #DA22FF;
 }
-
-/*teste*/
