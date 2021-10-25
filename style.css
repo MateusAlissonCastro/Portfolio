@@ -39,13 +39,16 @@
   right: 16rem;
 }
 .line{
-  background: #DA22FF;
+  background: #fff;
   height: .1rem;
   width: 100%;
-  /*box-shadow: .1rem .1rem 1px #000;*/
+  box-shadow: .1rem .1rem 1px #000;
   transition: transform 1s;
 }
-
+.show-menu .line{
+  background: #000;
+  box-shadow: none;
+}
 .show-menu #line1{
   transform: rotate(45deg);
   position: absolute;
