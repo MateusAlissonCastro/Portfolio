@@ -45,6 +45,32 @@
   box-shadow: .1rem .1rem 1px #000;
   transition: transform 1s;
 }
+.hamburguer span{
+  position: absolute;
+  left: 3rem;
+  height: 2rem;
+  width: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #DA22FF;
+  color: #ffffff;
+  font-family: var(--font-action);
+  transition: opacity 1s;
+  opacity: 0;
+}
+.hamburguer span::before{
+  content: ""; /*Pesquisar*/
+  position: absolute;
+  border-right: .5rem solid #DA22FF;
+  border-top: .5rem solid transparent;
+  border-left: .5rem solid transparent;
+  border-bottom: .5rem solid transparent;
+  left: -1rem;
+}
+.show-menu .hamburguer:hover span{
+  opacity: 1;
+}
 .show-menu .line{
   background: #000;
   box-shadow: none;
