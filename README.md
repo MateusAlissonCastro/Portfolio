@@ -7,5 +7,5 @@ O controle das tarefas será realizado no GitHub
 ## Ícones
 :package: nova atualização 
 :up: atualização 
-:beatle: correção de bug
-:checkeres_flag: release  
+:beetle: correção de bug
+:checkered_flag: liberar  
