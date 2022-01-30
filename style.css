@@ -12,6 +12,9 @@
   --font-secundary: "Josefin Slab", serif;
   --font-action: "Muli", serif;
 }
+html{
+  scroll-behavior: smooth; /* Suavisa a rolagem da página */
+}
 
 *{
     margin: 0;
@@ -33,6 +36,7 @@
   justify-content: space-evenly;
   cursor: pointer;
   transition: right 1s;
+  z-index: 51;
   
 }
 .show-menu .hamburguer{
@@ -187,6 +191,7 @@ header{
   top: 0;
   right: -20rem;
   transition: all 1s;
+  z-index: 50;
 }
 .menu{
   position: absolute;
@@ -311,6 +316,7 @@ header{
 .projetos{
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 2rem;
 }
 
 .card{
@@ -393,6 +399,7 @@ header{
 
 /* SESSÃO CONTATOS */
 .sessao-contato{
+  /* margin-bottom: 2rem; */
   height: 100vh;
   width: 100%;
   background-color: #272727;
@@ -531,4 +538,50 @@ header{
   padding: 1rem;
   cursor: pointer;
   grid-column: 2;
+}
+
+/* RODAPÉ */
+footer{
+  height: 7rem;
+  width: 100%;
+  background: #17181b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-content{
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-content p{
+  font-family: var(--font-secundary);
+  color: #a7a7a7;
+  font-size: 1.2rem;
+}
+.social-list a{
+  margin: 0 2rem;
+  color: #a7a7a7;
+  font-size: 1.3rem;
+}
+.social-list ul{
+  display: flex;
+}
+
+/* LINK P/ TOPO */
+#link-topo{
+  position: fixed;
+  right: 3rem;
+  bottom: 3rem;
+  width: 3rem;
+  height: 3rem;
+  background: #DA22FF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #9733EE, #DA22FF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #9733EE, #DA22FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 0.3rem;
+  box-shadow: 0 0.1rem 0.6rem #00000009;
 }
